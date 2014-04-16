@@ -17,14 +17,14 @@ $(document).ready(function(){
     $(function(){
       // Bind the swipeleftHandler callback function to the swipe event on div.#swipeRegion
       $( "#swipeRegion" ).on( "swiperight", function(){
-        reverse();
+        forward();
       });                       
     });
     //-----------------
     $(function(){
       // Bind the swiperightHandler callback function to the swipe event on div.#swipeRegion
       $( "#swipeRegion" ).on( "swipeleft", function(){
-        forward();
+        reverse();
       });                       
     });
 //======================================= 
