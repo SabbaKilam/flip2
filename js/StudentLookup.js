@@ -1,6 +1,6 @@
 $(document).ready(function(){
   //==============DATA=======================
-  var infoFields = ["lastName","firstName","homeMail","schoolMail","homePhone","cellPhone" ]
+  var infoFields = ["lastName","firstName","homeMail","cellPhone" ]
   var ajax = new HttpObject()
   , records = []
   , recordCount = 0
@@ -36,7 +36,7 @@ $(document).ready(function(){
       //attachEventHandler( anObject, anEvent, aHandler );
   }); 
   //==============================================
-  var actionFields = ["homeMail","schoolMail","homePhone","cellPhone"];
+  var actionFields = ["homeMail","cellPhone"];
   forAll( actionFields, function( field ) {
       objectEventHandler(o(field), "mouseover", function() { highlight(field); } ); 
       objectEventHandler(o(field), "mouseout", function() { highlight(field); } );
@@ -335,8 +335,7 @@ $(document).ready(function(){
           " "+
           "<"+
           o(id).value.trim()+
-          "> ?"+
-          "cc="+o( ( id === "homeMail" ) ? "schoolMail" : "homeMail" ).value;
+          ">"
       }
   }
   //==============================================
