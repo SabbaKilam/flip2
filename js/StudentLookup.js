@@ -268,7 +268,7 @@ $(document).ready(function(){
   //=================================================
   function init(){
       o("match").focus();
-      ajax.open("GET", "https://dl.dropboxusercontent.com/u/21142484/StudentNames/ComputerStudents.csv", true );
+      ajax.open("GET", "http://dl.dropboxusercontent.com/u/21142484/StudentNames/ComputerStudents.csv", true );
       //https://dl.dropboxusercontent.com/u/21142484/StudentNames/ComputerStudents.csv
       //https://dl.dropbox.com/u/21142484/StudentNames/ComputerStudents.csv
       ajax.onreadystatechange = function() {
